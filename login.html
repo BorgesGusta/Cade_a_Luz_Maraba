@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Cadê a luz, Marabá?</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <h1 id="site-title">Cadê a luz, Marabá?</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+          <li><a href="#ajuda">Ajuda</a></li>
+        </ul>
+      </nav>
+      <a href="registro.html" id="login-button">Faça seu login ➜</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="login-section flex-section">
+      <div class="left-illustration">
+        <img src="assets/rafiki.png" alt="Ilustração de login" />
+      </div>
+
+      <div class="right-login-box">
+        <h2>Faça seu login</h2>
+        <p>Após o login, você terá acesso ao seu histórico de denúncias e poderá realizar novas denúncias, se necessário.</p>
+
+        <form id="login-form">
+          <h3>Login</h3>
+
+          <input type="email" name="email" placeholder="E-mail" class="input-field" required />
+          <input type="password" name="senha" placeholder="Senha" class="input-field" required />
+
+          <div class="google-login">
+            <button type="button" id="google-login-btn">
+              <img src="assets/google-icon.png" alt="Logo do Google">
+              Entre com Google
+            </button>
+          </div>
+
+          <button type="submit" id="login-submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 ACCAM Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
