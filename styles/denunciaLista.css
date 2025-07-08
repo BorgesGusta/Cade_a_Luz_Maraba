@@ -172,3 +172,22 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.input-filtro {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.lista-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto; /* O mesmo grid da lista <li> */
+  gap: 1rem;
+  padding: 1rem;
+  font-weight: bold; /* Deixa os títulos em negrito */
+  color: #333;
+  border-bottom: 2px solid #3a8d6e; /* Adiciona uma linha para separar */
+  margin-bottom: 0.5rem;
+}

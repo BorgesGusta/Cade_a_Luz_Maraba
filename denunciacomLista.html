@@ -27,54 +27,31 @@
         <main>
             <section class="lista-lugares">
                 <h2>Lista dos lugares</h2>
-                <ul>
-                    <li>
-                        <span>Bairro laranjeiras</span>
-                        <span>Queda brusca de energia</span>
-                        <span>05 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Cidade Nova</span>
-                        <span>Poste pegando fogo</span>
-                        <span>02 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Nova Marabá</span>
-                        <span>Furtos de fios</span>
-                        <span>01 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Liberdade</span>
-                        <span>Acidente de trânsito e porte caiu</span>
-                        <span>01 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Bairro da Paz</span>
-                        <span>Acidente com pipas</span>
-                        <span>01 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                </ul>
-            </section>
+                <input type="text" id="filtro-bairro" placeholder="Pesquisar por bairro..." class="input-filtro">
+                <div class="lista-header">
+                    <span>Bairro</span>
+                    <span>Descrição</span>
+                    <span>Data da denúncia</span>
+                </div>
+                 <ul id="lista-denuncias">
+                    
+                 </ul>
+                </section>
 
             <section class="form-denuncia">
                 <h2>Descrição da denúncia</h2>
-                <form>
+                <form id="form-denuncia"></form>
                     <label>Endereço da Ocorrência:</label>
                     <div class="form-grid-double">
                         <input type="text" placeholder="Logradouro">
-                        <input type="text" placeholder="Bairro">
+                        <input type="text" placeholder="Bairro" id="denuncia-bairro">
                         <input type="text" placeholder="CEP">
                         <input type="text" placeholder="Ponto de referência">
                     </div>
 
                     <label for="descricao">Descreva o que aconteceu:</label>
                     <div class="textarea-container">
-                        <textarea id="descricao"></textarea>
+                        <textarea id="denuncia-descricao"></textarea>
                         <button type="button" class="btn-add-foto">Adicionar Foto/Vídeo</button>
                     </div>
                     
@@ -93,5 +70,6 @@
             <p>Copyright© 2025 ACGM - Todos os direitos reservados</p>
         </footer>
     </div>
+    <script src="js/denuncias.js"></script>
 </body>
 </html>
