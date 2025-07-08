@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--gray-color);
+  color: var(--dark-color);
+}
+
+/* ========== HEADER ========== */
+#header {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#site-title {
+  font-size: 1.8rem;
+}
+
+#main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#main-nav a {
+  color: var(--light-color);
+  font-weight: 500;
+}
+
+#login-button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+}
+
+/* ========== FORMULÁRIO ========== */
+#main-content {
+  padding: 2rem;
+}
+
+.report-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  color: white;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.double {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: var(--border-radius);
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* ========== REGISTRO ========== */
+.registro-section {
+  margin-top: 3rem;
+}
+
+.registro-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.registro-img {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.registro-img img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+/* ========== FOOTER ========== */
+#footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #eee;
+  margin-top: 3rem;
+  color: #666;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 768px) {
+  .double {
+    flex-direction: column;
+  }
+
+  #header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #login-button {
+    margin-top: 1rem;
+  }
+}

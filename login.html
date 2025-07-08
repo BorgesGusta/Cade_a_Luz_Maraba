@@ -9,15 +9,21 @@
 <body>
   <header id="header">
     <div class="container">
-      <h1 id="site-title">Cadê a luz, Marabá?</h1>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-          <li><a href="#ajuda">Ajuda</a></li>
-        </ul>
-      </nav>
-      <a href="registro.html" id="login-button">Faça seu login ➜</a>
+      <div class="logo-main">
+        <img src="assets/Subtract.png" alt="icone-logo">
+        <h1 id="site-title">Cadê a luz, Marabá?</h1>
+      </div>
+      <div class="nav-tabel">
+        <nav id="main-nav">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+          </ul>
+        </nav>
+        <button id="login-button">
+          <a href="register.html">Faça seu registro ➜</a></button>
+      </div>
     </div>
   </header>
 
@@ -31,11 +37,11 @@
         <h2>Faça seu login</h2>
         <p>Após o login, você terá acesso ao seu histórico de denúncias e poderá realizar novas denúncias, se necessário.</p>
 
-        <form id="login-form">
+        <form id="login-form" action="register.html">
           <h3>Login</h3>
 
-          <input type="email" name="email" placeholder="E-mail" class="input-field" required />
-          <input type="password" name="senha" placeholder="Senha" class="input-field" required />
+          <input type="email" id="email" name="email" placeholder="E-mail" class="input-field" required />
+          <input type="password" id="senha" name="senha" placeholder="Senha" class="input-field" required />
 
           <div class="google-login">
             <button type="button" id="google-login-btn">
@@ -49,7 +55,7 @@
       </div>
     </section>
   </main>
-
+  <script src="scripts/login.js"></script>
   <footer id="footer">
     <p>&copy; 2025 ACCAM Todos os direitos reservados</p>
   </footer>

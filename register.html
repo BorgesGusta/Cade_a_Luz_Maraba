@@ -9,16 +9,21 @@
 <body>
   <header id="header">
     <div class="container">
+      <div class="logo-main">
         <img src="assets/Subtract.png" alt="logo-icone">
-      <h1 id="site-title">Cadê a luz, Marabá?</h1>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-          <li><a href="#ajuda">Ajuda</a></li>
-        </ul>
-      </nav>
-      <a href="#login" id="login-button">Faça seu login ➜</a>
+        <h1 id="site-title">Cadê a luz, Marabá?</h1>
+      </div>
+      <div class="nav-tabel">
+        <nav id="main-nav">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+          </ul>
+        </nav>
+        <a href="login.html" id="login-button">Faça seu login ➜</a>
+      </div>
+
     </div>
   </header>
 
@@ -36,7 +41,7 @@
           <p>Junte-se ao “cadê a luz, Marabá?” e ajude a manter nossa cidade iluminada!</p>
         </div>
 
-        <form id="register-form">
+        <form id="register-form" action="login.html">
           <h3>Crie sua conta</h3>
 
           <input type="text" id="nome" name="nome" placeholder="Nome completo" class="input-field" />
@@ -62,7 +67,7 @@
             </button>
           </div>
 
-          <p class="login-link">Já tem uma conta? <a href="#login">Faça Login</a> aqui.</p>
+          <p class="login-link">Já tem uma conta? <a href="login.html">Faça Login</a> aqui.</p>
 
           <button type="submit" id="submit-button">Cadastrar</button>
         </form>

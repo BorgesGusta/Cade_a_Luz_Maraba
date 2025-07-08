@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Denúncia - Cadê a luz, Marabá?</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <h1 id="site-title">Cadê a luz, Marabá?</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+          <li><a href="#ajuda">Ajuda</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" id="login-button">Faça seu login ➜</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="report-section">
+      <h2>Onde Faltou Luz?</h2>
+      <p class="subtitle">Nos ajude a localizar o problema rapidamente.</p>
+
+      <div class="form-container">
+        <h3 class="form-title">Descrição da denúncia</h3>
+
+        <form id="report-form">
+          <div class="form-group double">
+            <div>
+              <label for="logradouro">Logradouro</label>
+              <input type="text" id="logradouro" name="logradouro">
+            </div>
+            <div>
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" name="bairro">
+            </div>
+          </div>
+
+          <div class="form-group double">
+            <div>
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep">
+            </div>
+            <div>
+              <label for="referencia">Ponto de referência</label>
+              <input type="text" id="referencia" name="referencia">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição de como ocorreu</label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+          </div>
+
+          <div class="form-group double">
+            <div>
+              <label for="afetadas">Quantidade de pessoas afetadas</label>
+              <input type="number" id="afetadas" name="afetadas">
+            </div>
+            <div>
+              <label for="especiais">Pessoas com necessidades especiais</label>
+              <input type="number" id="especiais" name="especiais">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="registro-section">
+      <h2>Registro da ocorrência</h2>
+      <p class="subtitle">ex: foto/vídeo</p>
+      <div class="registro-img">
+        <img src="foto-denuncia.jpg" alt="Imagem da ocorrência">
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 ACCAM Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

@@ -22,68 +22,75 @@
             </nav>
         </div>
     </header>
-
+    
     <div class="main-container">
         <main>
             <section class="lista-lugares">
                 <h2>Lista dos lugares</h2>
-                <ul>
-                    <li>
-                        <span>Bairro laranjeiras</span>
-                        <span>Queda brusca de energia</span>
-                        <span>05 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Cidade Nova</span>
-                        <span>Poste pegando fogo</span>
-                        <span>02 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Nova Marabá</span>
-                        <span>Furtos de fios</span>
-                        <span>01 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Liberdade</span>
-                        <span>Acidente de trânsito e porte caiu</span>
-                        <span>01 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <span>Bairro da Paz</span>
-                        <span>Acidente com pipas</span>
-                        <span>01 / 07 / 25</span>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                </ul>
+                <div class="lista-container">
+                    <div class="lista-cabecalho">
+                        <span>Bairro</span>
+                        <span>Motivo</span>
+                        <span>Data</span>
+                    </div>
+                    <ul id="lista-lugares">
+                        <li>
+                            <span>Bairro laranjeiras</span>
+                            <span>Queda brusca de energia</span>
+                            <span>05/07/25</span>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <span>Cidade Nova</span>
+                            <span>Poste pegando fogo</span>
+                            <span>02/07/25</span>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <span>Nova Marabá</span>
+                            <span>Furtos de fios</span>
+                            <span>01/07/25</span>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <span>Liberdade</span>
+                            <span>Acidente de trânsito e poste caiu</span>
+                            <span>01/07/25</span>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <span>Bairro da Paz</span>
+                            <span>Acidente com pipas</span>
+                            <span>01/07/25</span>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </section>
-
+            
             <section class="form-denuncia">
                 <h2>Descrição da denúncia</h2>
-                <form>
+                <form id="form-denuncia">
                     <label>Endereço da Ocorrência:</label>
                     <div class="form-grid-double">
-                        <input type="text" placeholder="Logradouro">
-                        <input type="text" placeholder="Bairro">
-                        <input type="text" placeholder="CEP">
-                        <input type="text" placeholder="Ponto de referência">
+                        <input type="text" id="logradouro" placeholder="Logradouro" required>
+                        <input type="text" id="bairro" placeholder="Bairro" required>
+                        <input type="text" id="cep" placeholder="CEP">
+                        <input type="text" id="referencia" placeholder="Ponto de referência">
                     </div>
-
+                    
                     <label for="descricao">Descreva o que aconteceu:</label>
                     <div class="textarea-container">
-                        <textarea id="descricao"></textarea>
+                        <textarea id="descricao" required></textarea>
                         <button type="button" class="btn-add-foto">Adicionar Foto/Vídeo</button>
                     </div>
                     
                     <label>Quantas pessoas moram no local afetado?</label>
-                    <input type="text">
-
+                    <input type="number" id="pessoas" min="0">
+                    
                     <label>Há alguém com necessidade de atenção especial?</label>
-                    <input type="text">
-
+                    <input type="text" id="atencao-especial">
+                    
                     <button type="submit" class="btn-enviar">ENVIAR DENÚNCIA</button>
                 </form>
             </section>
@@ -93,5 +100,7 @@
             <p>Copyright© 2025 ACGM - Todos os direitos reservados</p>
         </footer>
     </div>
+
+    <script src="scripts/denuncias.js"></script>
 </body>
 </html>
