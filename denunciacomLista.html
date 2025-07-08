@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadê a Luz, Marabá?</title>
+    <link rel="stylesheet" href="styles/denunciaLista.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="assets/Subtract.png" alt="Ícone de lupa com raio">
+                <h1>Cadê a Luz, Marabá?</h1>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contatos</a>
+                <a href="#">Ajuda</a>
+                <a href="#">Faça seu login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main>
+            <section class="lista-lugares">
+                <h2>Lista dos lugares</h2>
+                <ul>
+                    <li>
+                        <span>Bairro laranjeiras</span>
+                        <span>Queda brusca de energia</span>
+                        <span>05 / 07 / 25</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <span>Cidade Nova</span>
+                        <span>Poste pegando fogo</span>
+                        <span>02 / 07 / 25</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <span>Nova Marabá</span>
+                        <span>Furtos de fios</span>
+                        <span>01 / 07 / 25</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <span>Liberdade</span>
+                        <span>Acidente de trânsito e porte caiu</span>
+                        <span>01 / 07 / 25</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <span>Bairro da Paz</span>
+                        <span>Acidente com pipas</span>
+                        <span>01 / 07 / 25</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="form-denuncia">
+                <h2>Descrição da denúncia</h2>
+                <form>
+                    <label>Endereço da Ocorrência:</label>
+                    <div class="form-grid-double">
+                        <input type="text" placeholder="Logradouro">
+                        <input type="text" placeholder="Bairro">
+                        <input type="text" placeholder="CEP">
+                        <input type="text" placeholder="Ponto de referência">
+                    </div>
+
+                    <label for="descricao">Descreva o que aconteceu:</label>
+                    <div class="textarea-container">
+                        <textarea id="descricao"></textarea>
+                        <button type="button" class="btn-add-foto">Adicionar Foto/Vídeo</button>
+                    </div>
+                    
+                    <label>Quantas pessoas moram no local afetado?</label>
+                    <input type="text">
+
+                    <label>Há alguém com necessidade de atenção especial?</label>
+                    <input type="text">
+
+                    <button type="submit" class="btn-enviar">ENVIAR DENÚNCIA</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Copyright© 2025 ACGM - Todos os direitos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>

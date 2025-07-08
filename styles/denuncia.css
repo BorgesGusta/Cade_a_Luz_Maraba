@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #153930;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+.formulario-denuncia {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.formulario-denuncia h2 {
+    margin-top: 0;
+    color: #4F8C55;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input,
+textarea {
+    resize: vertical;
+    font-size: 1rem;
+    border-radius: 6px;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+}
+
+
+textarea {
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #e0e0e0;
+}
+
+button.submit {
+    background-color: #4CAF4F;
+    color: white;
+}
+
+.lista-denuncias {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lista-denuncias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-denuncias li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    width: 40px;
+    height: 40px;
+}
