@@ -13,13 +13,15 @@
                 <img src="assets/Subtract.png" alt="Ícone de lupa com raio">
                 <h1>Cadê a Luz, Marabá?</h1>
             </div>
+            <div class="right-area">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contatos</a>
-                <a href="#">Ajuda</a>
-                <a href="#">Faça seu login</a>
+                <a href="home.html">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contatos">Contatos</a>
+                <a href="#ajuda">Ajuda</a>
             </nav>
+             <a href="login.html" class="btn-cta-header" id="cta-principal">Faça seu login</a>
+            </div>
         </div>
     </header>
 
@@ -40,29 +42,51 @@
 
             <section class="form-denuncia">
                 <h2>Descrição da denúncia</h2>
-                <form id="form-denuncia"></form>
+                <form id="form-denuncia">
                     <label>Endereço da Ocorrência:</label>
                     <div class="form-grid-double">
-                        <input type="text" placeholder="Logradouro">
-                        <input type="text" placeholder="Bairro" id="denuncia-bairro">
-                        <input type="text" placeholder="CEP">
-                        <input type="text" placeholder="Ponto de referência">
+                        <input type="text" id="denuncia-logradouro" placeholder="Logradouro">
+                        <input type="text" id="denuncia-bairro" placeholder="Bairro">
+                        <input type="text" id="denuncia-cep" placeholder="CEP">
+                        <input type="text" id="denuncia-referencia" placeholder="Ponto de referência">
                     </div>
-
-                    <label for="descricao">Descreva o que aconteceu:</label>
-                    <div class="textarea-container">
-                        <textarea id="denuncia-descricao"></textarea>
-                        <button type="button" class="btn-add-foto">Adicionar Foto/Vídeo</button>
-                    </div>
-                    
-                    <label>Quantas pessoas moram no local afetado?</label>
-                    <input type="text">
-
-                    <label>Há alguém com necessidade de atenção especial?</label>
-                    <input type="text">
-
-                    <button type="submit" class="btn-enviar">ENVIAR DENÚNCIA</button>
-                </form>
+                    <label for="denuncia-descricao">Descreva o que aconteceu:</label>
+                    <textarea id="denuncia-descricao"></textarea>
+                    <label>Anexar uma foto ou vídeo (PNG ou JPG):</label>
+                    <div class="upload-area">
+                         <input type="file" id="denuncia-arquivo" accept="image/png, image/jpeg" style="display: none;">
+                         <label for="denuncia-arquivo" class="btn-upload">Escolher arquivo</label>
+                         <span id="nome-arquivo">Nenhum arquivo selecionado</span>
+                        </div>
+                        
+                        <div class="form-grid-double">
+                            <div>
+                                <label>Quantas pessoas moram no local afetado?</label>
+                                <select id="denuncia-moradores" class="input-select">
+                                    <option value="">Selecione...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6+">6 ou mais</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Há alguém com necessidade especial?</label>
+                                <select id="denuncia-necessidade-especial" class="input-select">
+                                    <option value="nao">Não</option>
+                                    <option value="sim">Sim</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div id="container-descricao-necessidade" style="display: none;">
+                            <label for="descricao-necessidade-texto">Por favor, descreva a necessidade especial:</label>
+                            <textarea id="descricao-necessidade-texto"></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">ENVIAR DENÚNCIA</button>
+                    </form>
             </section>
         </main>
         
@@ -71,5 +95,6 @@
         </footer>
     </div>
     <script src="js/denuncias.js"></script>
+    <script src="js/autenticacao.js"></script>
 </body>
 </html>

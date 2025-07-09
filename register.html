@@ -7,20 +7,23 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header id="header">
-    <div class="container">
-        <img src="assets/Subtract.png" alt="logo-icone">
-      <h1 id="site-title">Cadê a luz, Marabá?</h1>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-          <li><a href="#ajuda">Ajuda</a></li>
-        </ul>
-      </nav>
-      <a href="#login" id="login-button">Faça seu login ➜</a>
+  <header>
+    <div class="header-content">
+      <div class="logo-area">
+        <img src="assets/Subtract.png" alt="Ícone de lupa com raio">
+        <h1>Cadê a luz, Marabá?</h1>
+      </div>
+      <div class="right-area">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contatos">Contatos</a>
+            <a href="#ajuda">Ajuda</a>
+        </nav>
+        <a href="login.html" class="btn-cta-header">Faça seu login</a>
+      </div>
     </div>
-  </header>
+</header>
 
   <main id="main-content">
     <section id="intro-section" class="flex-section">
@@ -36,7 +39,7 @@
           <p>Junte-se ao “cadê a luz, Marabá?” e ajude a manter nossa cidade iluminada!</p>
         </div>
 
-        <form id="register-form">
+        <form id="register-form" action="login.html">
           <h3>Crie sua conta</h3>
 
           <input type="text" id="nome" name="nome" placeholder="Nome completo" class="input-field" />
@@ -74,5 +77,6 @@
     <p>&copy; 2025 ACCAM Todos os direitos reservados</p>
   </footer>
     <script src="js/register.js"></script>
+    <script src="js/autenticacao.js"></script>
 </body>
 </html>
